@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cocktail_section{
+    background-color: #ff636357;
+    margin-top: 40px;
+}
+.cocktail_head{
+    align-items: center;
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 10px;
+    margin: 20px;
+    text-decoration: solid dashed;
+    text-transform: uppercase;
+}
+.cocktail_head2{
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 10px;
+    margin: 20px;
+    text-decoration: solid dashed;
+    text-transform: uppercase;
+}
+.cocktail_grids{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 20px;
+}
+
+.cocktail_image{
+    width: 200px;
+    height: 200px;
+}
+.cocktail_names{
+    padding: 2px 5px;
+    background-color: #f8b600c9;
+    width: fit-content;
+    margin-bottom: 1px;
+}
+.cocktail_propss{
+    padding: 2px 5px;
+    background-color: #125B50;
+    width: fit-content;
+    margin: 5px 0;
+    color: white;
+}
+.cocktail_btn{
+    background-color: white;
+    align-items: center;
+    padding: 2px 5px;
+}
+.cocktail_btn:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+@media (max-width: 700px) {
+    .cocktail_grids {
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width: 476px) {
+    .cocktail_grids {
+        grid-template-columns: auto;
+    }
+    .cocktail_parent_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cocktail_detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
